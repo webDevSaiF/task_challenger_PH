@@ -10,6 +10,6 @@ loadData()
 
 // PRINTING DATA
 function printData(obj) {
-  const activityText = document.querySelector(".activity-box");
+  const activityText = document.querySelector(".activity");
   activityText.textContent = obj.activity;
 }
