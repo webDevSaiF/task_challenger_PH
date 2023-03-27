@@ -6,7 +6,10 @@ async function loadData() {
 }
 loadData()
   .then((data) => printData(data))
-  .catch((err) => console.log("Could Not Fetch the data from API"));
+  .catch((err) => {
+    const activityText = document.querySelector(".activity");
+    activityText.textContent = err;
+  });
 
 // PRINTING DATA
 function printData(obj) {
